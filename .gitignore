@@ -41,3 +41,7 @@ app-example
 # generated native folders
 /ios
 /android
+
+# misc
+assets/original_files/**
+assets/paint_files/**

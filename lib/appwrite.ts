@@ -7,6 +7,7 @@ import {
   Query,
 } from "react-native-appwrite";
 import { CreateUserParams, SignInParams } from "@/type";
+import { User } from "@/type";
 
 export const appwriteConfig = {
   projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID,
@@ -79,7 +80,7 @@ export const getCurrentUser = async () => {
 
     if (!currentAccount) throw Error;
 
-    const currentUser = await tablesDB.listRows({
+    const currentUser = await tablesDB.listRows<User>({
       databaseId: appwriteConfig.databaseId!,
       tableId: appwriteConfig.userTableId!,
       queries: [Query.equal("accountId", currentAccount.$id)],

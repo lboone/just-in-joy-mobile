@@ -45,3 +45,5 @@ app-example
 # misc
 assets/original_files/**
 assets/paint_files/**
+
+.env.local

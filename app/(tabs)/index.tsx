@@ -29,15 +29,16 @@ export default function Index() {
                 style={{ backgroundColor: item.color }}
                 android_ripple={{ color: "#ffff22" }}
               >
-                {({ pressed }) => (
+                {() => (
                   <Fragment>
                     <View className="h-full w-1/2">
                       <Image
                         source={item.image}
-                        className={"size-full"}
-                        resizeMode={"contain"}
+                        className={cn("size-full")}
+                        resizeMode={"cover"}
                       />
                     </View>
+
                     <View
                       className={cn(
                         "offer-card__info",

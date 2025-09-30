@@ -1,6 +1,6 @@
 import { Models } from "react-native-appwrite";
 
-export interface MenuItem extends Models.Document {
+export interface MenuItem extends Models.Row {
   name: string;
   price: number;
   image_url: string;
@@ -104,4 +104,5 @@ interface SignInParams {
 interface GetMenuParams {
   category: string;
   query: string;
+  limit?: number;
 }

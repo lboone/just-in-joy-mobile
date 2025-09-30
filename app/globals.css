@@ -136,4 +136,12 @@
     .small-bold {
         @apply text-xs font-quicksand-bold;
     }
+
+    .home-even {
+        @apply [mask-image:linear-gradient(to_right,transparent,black)] [mask-repeat:no-repeat] [mask-size:cover] [mask-position:center] [-webkit-mask-image:linear-gradient(to_right,transparent,black)] [-webkit-mask-repeat:no-repeat] [-webkit-mask-size:cover] [-webkit-mask-position:center];
+    }
+
+    .home-odd {
+        @apply [mask-image:linear-gradient(to_left,transparent,black)] [mask-repeat:no-repeat] [mask-size:cover] [mask-position:center] [-webkit-mask-image:linear-gradient(to_left,transparent,black)] [-webkit-mask-repeat:no-repeat] [-webkit-mask-size:cover] [-webkit-mask-position:center];
+    }
 }

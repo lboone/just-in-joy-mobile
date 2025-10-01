@@ -12,6 +12,8 @@ import { images, offers } from "@/constants";
 import cn from "clsx";
 import CartButton from "@/components/CartButton";
 
+import { router } from "expo-router";
+
 export default function Index() {
   return (
     <SafeAreaView className={"flex-1 bg-white"}>
@@ -28,6 +30,12 @@ export default function Index() {
                 )}
                 style={{ backgroundColor: item.color }}
                 android_ripple={{ color: "#ffff22" }}
+                onPress={() => {
+                  router.push({
+                    pathname: "/search",
+                    params: { category: item.id },
+                  });
+                }}
               >
                 {() => (
                   <Fragment>

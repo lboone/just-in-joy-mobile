@@ -1,4 +1,5 @@
 import { Models } from "react-native-appwrite";
+import { ReactNode } from "react";
 
 export interface MenuItem extends Models.Row {
   name: string;
@@ -66,7 +67,7 @@ interface CustomButtonProps {
   onPress?: () => void;
   title?: string;
   style?: string;
-  leftIcon?: React.ReactNode;
+  leftIcon?: ReactNode;
   textStyle?: string;
   isLoading?: boolean;
 }

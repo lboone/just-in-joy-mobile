@@ -70,26 +70,30 @@ export const CATEGORIES = [
 
 export const offers = [
   {
-    id: 1,
+    id: "68daca20001de55a8d55",
     title: "LATTES",
+    param: "lattes",
     image: latte,
     color: "#D33B0D",
   },
   {
-    id: 2,
+    id: "68daca2000240c72c108",
     title: "COFFEE",
+    param: "coffees",
     image: coffee,
     color: "#DF5A0C",
   },
   {
-    id: 3,
+    id: "68daca20002a4d38eaf3",
     title: "HOT COCO",
+    param: "hot chocolates",
     image: hotchocolate,
     color: "#084137",
   },
   {
-    id: 4,
+    id: "68daca2000308d3fd4a0",
     title: "OTHERS",
+    param: "others",
     image: americano,
     color: "#EB920C",
   },
